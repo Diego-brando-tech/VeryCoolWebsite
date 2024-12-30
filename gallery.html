@@ -35,16 +35,30 @@
         <div id="content">
             <h2>My Gallery</h2>
             <div class="gallery">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 1">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 2">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 3">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 4">
-                <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 5">
+                <div style="width: 200px; height: 150px; overflow: hidden; position: relative;">
+                    <img src="https://via.placeholder.com/200x150" alt="Placeholder Image 1" id="carousel" style="width: 100%; position: absolute;">
+                </div>
             </div>
         </div>
         <div id="footer">
             <p>&copy; 2000-2024 Your Name. All rights reserved.</p>
         </div>
     </div>
+
+    <script>
+        const images = [
+            "https://via.placeholder.com/200x150",
+            "https://via.placeholder.com/200x150/ff00ff/ffffff",
+            "https://via.placeholder.com/200x150/00ffff/ffffff",
+            "https://via.placeholder.com/200x150/ffcc00/ffffff"
+        ];
+        let currentImageIndex = 0;
+
+        function rotateImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById("carousel").src = images[currentImageIndex];
+        }
+        setInterval(rotateImage, 3000); // Change image every 3 seconds
+    </script>
 </body>
 </html>
