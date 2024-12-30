@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Jazzed-Up Website</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 850px;
+            margin: 30px auto;
+            background: #000000;
+            border: 3px solid #ff00ff;
+            box-shadow: 0 0 15px #ff00ff, 0 0 15px #00ffff;
+        }
+        #header {
+            background: radial-gradient(circle, #ff00ff, #000000);
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            animation: colorPulse 3s infinite;
+        }
+        @keyframes colorPulse {
+            0%, 100% {
+                color: #ff00ff;
+            }
+            50% {
+                color: #00ffff;
+            }
+        }
+        #nav {
+            background: #0000ff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 3px solid #ff00ff;
+        }
+        #nav a {
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        #nav a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+        }
+        #content {
+            padding: 20px;
+            background: #1a1a1a;
+            color: #ffffff;
+            border: 2px solid #00ffff;
+        }
+        h2 {
+            text-shadow: 2px 2px 5px #00ffff;
+        }
+        .glow-text {
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #111111;
+            color: #ffffff;
+        }
+        table, th, td {
+            border: 2px solid #ff00ff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #00ffff;
+            color: #000000;
+        }
+        td {
+            background: #333333;
+        }
+        #footer {
+            background: #0000ff;
+            text-align: center;
+            padding: 10px;
+            color: #ffffff;
+            border-top: 3px solid #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 class="glow-text">Welcome to My Cool 2000s Website</h1>
+        </div>
+        <div id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="content">
+            <h2>About This Site</h2>
+            <p class="glow-text">This website is cooler than ever! Relive the 2000s web magic, but with some extra flair.</p>
+            <h3>Sample Table</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Animated Header</td>
+                    <td>Colors pulse dynamically for a cool effect</td>
+                </tr>
+                <tr>
+                    <td>Glowing Text</td>
+                    <td>Text that shines like neon lights</td>
+                </tr>
+                <tr>
+                    <td>Gradient Background</td>
+                    <td>Vivid colors create an eye-catching design</td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <p>&copy; 2000-2024 Your Name. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
